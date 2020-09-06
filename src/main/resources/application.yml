@@ -1,0 +1,23 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://154.8.199.75:3306/easyStore?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: 112319@bdM!!
+    mvc:
+      static-path-pattern: /image/**
+    resources:
+      static-locations: file:/home/tomcat/tomcat/webapps/images/
+    servlet:
+      multipart:
+        enabled: true
+        max-file-size: 12MB
+        max-request-size: 12MB
+
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+
+server:
+  port: 8081
+
+
